@@ -22,7 +22,6 @@
             this.lblWelcomeText = new System.Windows.Forms.Label();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.lblForgot = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
@@ -61,9 +60,9 @@
             // picUser
             // 
             this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
-            this.picUser.Location = new System.Drawing.Point(60, 100);
+            this.picUser.Location = new System.Drawing.Point(85, 100);
             this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(230, 230);
+            this.picUser.Size = new System.Drawing.Size(180, 180);
             this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUser.TabIndex = 0;
             this.picUser.TabStop = false;
@@ -71,7 +70,6 @@
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.White;
-            this.pnlLogin.Controls.Add(this.lblForgot);
             this.pnlLogin.Controls.Add(this.btnDangNhap);
             this.pnlLogin.Controls.Add(this.txtMatKhau);
             this.pnlLogin.Controls.Add(this.txtTenDangNhap);
@@ -84,71 +82,63 @@
             this.pnlLogin.Size = new System.Drawing.Size(450, 450);
             this.pnlLogin.TabIndex = 1;
             // 
-            // lblForgot
-            // 
-            this.lblForgot.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForgot.ForeColor = System.Drawing.Color.Gray;
-            this.lblForgot.Location = new System.Drawing.Point(30, 330);
-            this.lblForgot.Name = "lblForgot";
-            this.lblForgot.Size = new System.Drawing.Size(395, 42);
-            this.lblForgot.TabIndex = 6;
-            this.lblForgot.Text = "Forgot UserName / Password ?";
-            this.lblForgot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblForgot.Click += new System.EventHandler(this.lblForgot_Click);
-            // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(30, 260);
+            this.btnDangNhap.Location = new System.Drawing.Point(30, 310);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(395, 55);
             this.btnDangNhap.TabIndex = 5;
-            this.btnDangNhap.Text = "LOGIN";
+            this.btnDangNhap.Text = "Tiếp tục";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(70, 195);
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(70, 239);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(355, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(355, 31);
             this.txtMatKhau.TabIndex = 4;
+            this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtMatKhau.Enter += new System.EventHandler(this.txtMatKhau_Enter);
             this.txtMatKhau.Leave += new System.EventHandler(this.txtMatKhau_Leave);
             // 
             // txtTenDangNhap
             // 
+            this.txtTenDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(70, 125);
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(70, 153);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(355, 27);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(355, 31);
             this.txtTenDangNhap.TabIndex = 2;
+            this.txtTenDangNhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTenDangNhap.Enter += new System.EventHandler(this.txtTenDangNhap_Enter);
             this.txtTenDangNhap.Leave += new System.EventHandler(this.txtTenDangNhap_Leave);
             // 
             // lblUserLogin
             // 
             this.lblUserLogin.AutoSize = true;
-            this.lblUserLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserLogin.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserLogin.Location = new System.Drawing.Point(145, 40);
             this.lblUserLogin.Name = "lblUserLogin";
-            this.lblUserLogin.Size = new System.Drawing.Size(182, 38);
+            this.lblUserLogin.Size = new System.Drawing.Size(206, 45);
             this.lblUserLogin.TabIndex = 0;
-            this.lblUserLogin.Text = "ĐĂNG NHẬP";
+            this.lblUserLogin.Text = "Jump Arena";
             // 
             // picPassword
             // 
             this.picPassword.Image = ((System.Drawing.Image)(resources.GetObject("picPassword.Image")));
-            this.picPassword.Location = new System.Drawing.Point(6, 185);
+            this.picPassword.Location = new System.Drawing.Point(6, 238);
             this.picPassword.Name = "picPassword";
-            this.picPassword.Size = new System.Drawing.Size(54, 45);
+            this.picPassword.Size = new System.Drawing.Size(50, 32);
             this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPassword.TabIndex = 8;
             this.picPassword.TabStop = false;
@@ -156,9 +146,9 @@
             // picEmail
             // 
             this.picEmail.Image = ((System.Drawing.Image)(resources.GetObject("picEmail.Image")));
-            this.picEmail.Location = new System.Drawing.Point(6, 115);
+            this.picEmail.Location = new System.Drawing.Point(6, 153);
             this.picEmail.Name = "picEmail";
-            this.picEmail.Size = new System.Drawing.Size(54, 45);
+            this.picEmail.Size = new System.Drawing.Size(50, 31);
             this.picEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picEmail.TabIndex = 7;
             this.picEmail.TabStop = false;
@@ -195,7 +185,6 @@
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.Label lblForgot;
         private System.Windows.Forms.PictureBox picPassword;
         private System.Windows.Forms.PictureBox picEmail;
         private System.Windows.Forms.Label lblWelcomeText;
