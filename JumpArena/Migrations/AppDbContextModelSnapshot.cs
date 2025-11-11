@@ -675,10 +675,10 @@ namespace JumpArena.Migrations
                             UserID = 6,
                             Address = "Quận 12, TPHCM",
                             BirthDate = new DateTime(2002, 11, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FullName = "Lý Văn Dũng",
-                            Password = "Dung@2025",
+                            FullName = "Bích Đú",
+                            Password = "Bich@2025",
                             RoleID = 1,
-                            Username = "DungJAGV0003"
+                            Username = "BichJAGV0003"
                         },
                         new
                         {
@@ -709,12 +709,10 @@ namespace JumpArena.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("DiscountType")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("TEXT");
 

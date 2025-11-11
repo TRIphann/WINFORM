@@ -12,13 +12,13 @@ namespace JumpArena.Models
 
         [Required]
         [StringLength(50)]
-        public string VoucherCode { get; set; } // MaVoucher
+        public string? VoucherCode { get; set; } // MaVoucher
 
         [StringLength(255)]
-        public string Description { get; set; } // MoTa
+        public string? Description { get; set; } // MoTa
 
         [StringLength(20)]
-        public string DiscountType { get; set; } // LoaiGiamGia
+        public string? DiscountType { get; set; } // LoaiGiamGia
 
         [Column(TypeName = "decimal(18, 0)")]
         public decimal DiscountValue { get; set; } // GiaTriGiam
