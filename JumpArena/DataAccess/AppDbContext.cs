@@ -46,7 +46,7 @@ namespace JumpArena.DataAccess
                 new User { UserID = 3, FullName = "Lê Thị Mai", BirthDate = new DateTime(1988, 12, 1), Address = "Quận 3, TPHCM", Username = "MaiJAKT00001", Password = "Mai@2025", RoleID = 3 },
                 new User { UserID = 4, FullName = "Trần Minh Hoàng", BirthDate = new DateTime(2003, 4, 10), Address = "Gò Vấp, TPHCM", Username = "HoangJAGV0001", Password = "Hoang@2025", RoleID = 1 },
                 new User { UserID = 5, FullName = "Phạm Thị Yến", BirthDate = new DateTime(2004, 7, 22), Address = "Bình Thạnh, TPHCM", Username = "YenJAGV0002", Password = "Yen@2025", RoleID = 1 },
-                new User { UserID = 6, FullName = "Lý Văn Dũng", BirthDate = new DateTime(2002, 11, 5), Address = "Quận 12, TPHCM", Username = "DungJAGV0003", Password = "Dung@2025", RoleID = 1 },
+                new User { UserID = 6, FullName = "Bích Đú", BirthDate = new DateTime(2002, 11, 5), Address = "Quận 12, TPHCM", Username = "BichJAGV0003", Password = "Bich@2025", RoleID = 1 },
                 new User { UserID = 7, FullName = "Đỗ Huyền Anh", BirthDate = new DateTime(2005, 1, 30), Address = "Tân Bình, TPHCM", Username = "AnhJAGV0004", Password = "Anh@2025", RoleID = 1 },
                 new User { UserID = 8, FullName = "Võ Thành Trung", BirthDate = new DateTime(2003, 9, 18), Address = "Phú Nhuận, TPHCM", Username = "TrungJAGV0005", Password = "Trung@2025", RoleID = 1 }
             );
