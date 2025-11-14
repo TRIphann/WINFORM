@@ -1,108 +1,13 @@
-# ===============================
-#  Visual Studio/C# Git Ignore File (Standard & Optimized)
-# ===============================
+# Bỏ qua file tạm của Visual Studio
+.vs/
 
-# Build results
-[Dd]ebug/
-[Rr]elease/
+# Bỏ qua file cấu hình người dùng (lỗi hôm trước)
+*.csproj.user
+
+# Bỏ qua database
+*.db
+*.db-journal
+
+# Bỏ qua thư mục build
 [Bb]in/
 [Oo]bj/
-bld/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Oo]ut/
-[Ll]og/
-[Ll]ogs/
-
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.userprefs
-*.vbw
-
-# Visual Studio cache/options directory
-# .vs/ (Uncomment this line if you want to ignore the whole .vs folder)
-# *.vspscc
-# *.vssscc
-
-# Test, Profiler, and Diagnostic files
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-TestResult.xml
-*.coverage
-*.coveragexml
-*.vsp
-*.psess
-
-# Generated Files
-Generated\ Files/
-*_i.c
-*_p.c
-*_h.h
-*.ipch
-*.aps
-*.ncb
-*.sdf
-*.cachefile
-*.VC.db
-*.VC.VC.opendb
-
-# Project Temporary/Cache Files
-*.ilk
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-.builds
-*.pidb
-*.svclog
-*.scc
-*.snk
-
-# NuGet Packages
-*.nupkg
-*.snupkg
-# Ignore the default packages folder
-[Pp]ackages/
-# but keep the build folder within it
-!**/[Pp]ackages/build/
-*.nuget.props
-*.nuget.targets
-
-# Publish folders
-publish/
-AppPackages/
-BundleArtifacts/
-
-# Database files
-*.mdf
-*.ldf
-*.ndf
-
-# Rider & VS Code
-.idea/
-.vscode/
-
-# Binaries and executable files (General)
-*.exe
-*.dll
-
-# Others
-~$*
-*~
-*.bak
-*.tmp
-*.temp
