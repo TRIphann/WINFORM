@@ -11,3 +11,4 @@
 # Bỏ qua thư mục build
 [Bb]in/
 [Oo]bj/
+.fake
