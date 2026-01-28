@@ -29,6 +29,13 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\frmInvoice.cs">
+    <Compile Update="Views\Accountant\frmInvoiceConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmPayment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\frmLogin.cs">
