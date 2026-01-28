@@ -1,10 +1,12 @@
-﻿using System;
+﻿//using JumpArena.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BTLLTTQ;
-namespace BTLLTTQ
+using JumpArena.View.Admin;
+
+namespace JumpArena
 {
     internal static class Program
     {
@@ -16,7 +18,7 @@ namespace BTLLTTQ
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VaiTro());
+            Application.Run(new frmSelectRole());
         }
     }
 }
