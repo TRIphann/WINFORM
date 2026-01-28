@@ -4,19 +4,64 @@
     <Compile Update="Views\Accountant\frmAuditLog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Accountant\frmBestSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Accountant\frmInvoiceConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Accountant\frmRevenueReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Accountant\frmVoucherCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Admin\AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Admin\CompanyAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Admin\CreateVoucherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Admin\ReportAndFeedbackForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\frmInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\frmPayment.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\frmSelectRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Manage\frmInventoryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Manage\frmInventoryPerformanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Manage\frmOrderModificationAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Manage\frmWorkShiftManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Staff\frmCheck_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Staff\frmReportToServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Staff\frmShiftPerformance.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
