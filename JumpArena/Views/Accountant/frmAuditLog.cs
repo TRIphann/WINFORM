@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace JumpArena.Views
+namespace JumpArena
 {
     public partial class frmAuditLog : Form
     {
         public frmAuditLog()
         {
             InitializeComponent();
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
