@@ -1,4 +1,4 @@
-﻿namespace JumpArena.Views
+﻿namespace JumpArena
 {
     partial class frmInvoiceConfirmation
     {
@@ -28,436 +28,331 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInvoiceConfirmation));
-            btnSearch = new Button();
-            btnClearFilter = new Button();
-            lblTitle = new Label();
-            lblFromDate = new Label();
-            lblToDate = new Label();
-            dtpStartDate = new DateTimePicker();
-            dtpEndDate = new DateTimePicker();
-            pnlHeader = new Panel();
-            lblFind = new Label();
-            txtSearchInvoice = new TextBox();
-            dgvPendingInvoices = new DataGridView();
-            pnlSummaryDetail = new Panel();
-            lblNote = new Label();
-            txtNotes = new TextBox();
-            lblInvoiceStatus = new Label();
-            lblTotalAmount = new Label();
-            lblSummaryTitle = new Label();
-            pnlActions = new Panel();
-            btnCancel = new Button();
-            btnConfirmSelected = new Button();
-            btnOpenReport = new Button();
-            btnRejectSelected = new Button();
-            btnOnline = new Button();
-            btnHoldList = new Button();
-            btnBillSearch = new Button();
-            btnReport = new Button();
-            btnMore = new Button();
-            pbLogo = new PictureBox();
-            pnlHeaderMain = new Panel();
-            sqliteCommand1 = new Microsoft.Data.Sqlite.SqliteCommand();
-            pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPendingInvoices).BeginInit();
-            pnlSummaryDetail.SuspendLayout();
-            pnlActions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
-            pnlHeaderMain.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btnSearch
-            // 
-            btnSearch.BackColor = Color.Aqua;
-            btnSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            btnSearch.Location = new Point(922, 46);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(127, 45);
-            btnSearch.TabIndex = 9;
-            btnSearch.Text = "Tìm kiếm";
-            btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // btnClearFilter
-            // 
-            btnClearFilter.BackColor = Color.Aqua;
-            btnClearFilter.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            btnClearFilter.Location = new Point(1137, 46);
-            btnClearFilter.Name = "btnClearFilter";
-            btnClearFilter.Size = new Size(127, 45);
-            btnClearFilter.TabIndex = 10;
-            btnClearFilter.Text = "Xóa";
-            btnClearFilter.UseVisualStyleBackColor = false;
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(39, 29);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(308, 38);
-            lblTitle.TabIndex = 11;
-            lblTitle.Text = "XÁC NHẬN HÓA ĐƠN";
-            // 
-            // lblFromDate
-            // 
-            lblFromDate.AutoSize = true;
-            lblFromDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            lblFromDate.Location = new Point(370, 15);
-            lblFromDate.Name = "lblFromDate";
-            lblFromDate.Size = new Size(95, 25);
-            lblFromDate.TabIndex = 12;
-            lblFromDate.Text = "Từ Ngày :";
-            // 
-            // lblToDate
-            // 
-            lblToDate.AutoSize = true;
-            lblToDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            lblToDate.Location = new Point(370, 61);
-            lblToDate.Name = "lblToDate";
-            lblToDate.Size = new Size(106, 25);
-            lblToDate.TabIndex = 13;
-            lblToDate.Text = "Đến Ngày :";
-            // 
-            // dtpStartDate
-            // 
-            dtpStartDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            dtpStartDate.Location = new Point(479, 10);
-            dtpStartDate.Name = "dtpStartDate";
-            dtpStartDate.Size = new Size(309, 31);
-            dtpStartDate.TabIndex = 14;
-            // 
-            // dtpEndDate
-            // 
-            dtpEndDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            dtpEndDate.Location = new Point(479, 61);
-            dtpEndDate.Name = "dtpEndDate";
-            dtpEndDate.Size = new Size(309, 31);
-            dtpEndDate.TabIndex = 15;
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnClearFilter = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearchInvoice = new System.Windows.Forms.TextBox();
+            this.lblFind = new System.Windows.Forms.Label();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.lblToDate = new System.Windows.Forms.Label();
+            this.lblFromDate = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.dgvPendingInvoices = new System.Windows.Forms.DataGridView();
+            this.pnlSummaryDetail = new System.Windows.Forms.Panel();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.lblNote = new System.Windows.Forms.Label();
+            this.lblInvoiceStatus = new System.Windows.Forms.Label();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
+            this.lblSummaryTitle = new System.Windows.Forms.Label();
+            this.pnlActions = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnOpenReport = new System.Windows.Forms.Button();
+            this.btnRejectSelected = new System.Windows.Forms.Button();
+            this.btnConfirmSelected = new System.Windows.Forms.Button();
+            this.pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPendingInvoices)).BeginInit();
+            this.pnlSummaryDetail.SuspendLayout();
+            this.pnlActions.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlHeader
             // 
-            pnlHeader.Controls.Add(lblFind);
-            pnlHeader.Controls.Add(txtSearchInvoice);
-            pnlHeader.Controls.Add(lblTitle);
-            pnlHeader.Controls.Add(btnClearFilter);
-            pnlHeader.Controls.Add(dtpEndDate);
-            pnlHeader.Controls.Add(btnSearch);
-            pnlHeader.Controls.Add(lblFromDate);
-            pnlHeader.Controls.Add(lblToDate);
-            pnlHeader.Controls.Add(dtpStartDate);
-            pnlHeader.Location = new Point(1, 64);
-            pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1281, 99);
-            pnlHeader.TabIndex = 16;
+            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.pnlHeader.Controls.Add(this.btnClearFilter);
+            this.pnlHeader.Controls.Add(this.btnSearch);
+            this.pnlHeader.Controls.Add(this.txtSearchInvoice);
+            this.pnlHeader.Controls.Add(this.lblFind);
+            this.pnlHeader.Controls.Add(this.dtpEndDate);
+            this.pnlHeader.Controls.Add(this.dtpStartDate);
+            this.pnlHeader.Controls.Add(this.lblToDate);
+            this.pnlHeader.Controls.Add(this.lblFromDate);
+            this.pnlHeader.Controls.Add(this.lblTitle);
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(1290, 100);
+            this.pnlHeader.TabIndex = 1;
             // 
-            // lblFind
+            // btnClearFilter
             // 
-            lblFind.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFind.Location = new Point(826, 6);
-            lblFind.Name = "lblFind";
-            lblFind.Size = new Size(90, 34);
-            lblFind.TabIndex = 17;
-            lblFind.Text = "Nhập Mã";
-            lblFind.TextAlign = ContentAlignment.MiddleCenter;
+            this.btnClearFilter.BackColor = System.Drawing.Color.Aqua;
+            this.btnClearFilter.FlatAppearance.BorderSize = 0;
+            this.btnClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearFilter.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearFilter.ForeColor = System.Drawing.Color.Black;
+            this.btnClearFilter.Location = new System.Drawing.Point(1111, 46);
+            this.btnClearFilter.Name = "btnClearFilter";
+            this.btnClearFilter.Size = new System.Drawing.Size(127, 45);
+            this.btnClearFilter.TabIndex = 8;
+            this.btnClearFilter.Text = "Xóa";
+            this.btnClearFilter.UseVisualStyleBackColor = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Aqua;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.Location = new System.Drawing.Point(951, 46);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(127, 45);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // txtSearchInvoice
             // 
-            txtSearchInvoice.Location = new Point(922, 6);
-            txtSearchInvoice.Multiline = true;
-            txtSearchInvoice.Name = "txtSearchInvoice";
-            txtSearchInvoice.Size = new Size(342, 34);
-            txtSearchInvoice.TabIndex = 16;
+            this.txtSearchInvoice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchInvoice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchInvoice.Location = new System.Drawing.Point(922, 6);
+            this.txtSearchInvoice.Multiline = true;
+            this.txtSearchInvoice.Name = "txtSearchInvoice";
+            this.txtSearchInvoice.Size = new System.Drawing.Size(342, 34);
+            this.txtSearchInvoice.TabIndex = 6;
+            // 
+            // lblFind
+            // 
+            this.lblFind.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFind.Location = new System.Drawing.Point(826, 6);
+            this.lblFind.Name = "lblFind";
+            this.lblFind.Size = new System.Drawing.Size(90, 34);
+            this.lblFind.TabIndex = 5;
+            this.lblFind.Text = "Nhập Mã";
+            this.lblFind.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEndDate.Location = new System.Drawing.Point(479, 61);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(309, 31);
+            this.dtpEndDate.TabIndex = 4;
+            // 
+            // dtpStartDate
+            // 
+            this.dtpStartDate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStartDate.Location = new System.Drawing.Point(479, 10);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(309, 31);
+            this.dtpStartDate.TabIndex = 3;
+            // 
+            // lblToDate
+            // 
+            this.lblToDate.AutoSize = true;
+            this.lblToDate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblToDate.Location = new System.Drawing.Point(370, 61);
+            this.lblToDate.Name = "lblToDate";
+            this.lblToDate.Size = new System.Drawing.Size(106, 25);
+            this.lblToDate.TabIndex = 2;
+            this.lblToDate.Text = "Đến Ngày :";
+            // 
+            // lblFromDate
+            // 
+            this.lblFromDate.AutoSize = true;
+            this.lblFromDate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFromDate.Location = new System.Drawing.Point(370, 15);
+            this.lblFromDate.Name = "lblFromDate";
+            this.lblFromDate.Size = new System.Drawing.Size(95, 25);
+            this.lblFromDate.TabIndex = 1;
+            this.lblFromDate.Text = "Từ Ngày :";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(39, 29);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(308, 38);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "XÁC NHẬN HÓA ĐƠN";
             // 
             // dgvPendingInvoices
             // 
-            dgvPendingInvoices.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPendingInvoices.Location = new Point(-4, 161);
-            dgvPendingInvoices.Name = "dgvPendingInvoices";
-            dgvPendingInvoices.RowHeadersWidth = 51;
-            dgvPendingInvoices.Size = new Size(736, 496);
-            dgvPendingInvoices.TabIndex = 17;
+            this.dgvPendingInvoices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPendingInvoices.Location = new System.Drawing.Point(12, 108);
+            this.dgvPendingInvoices.Name = "dgvPendingInvoices";
+            this.dgvPendingInvoices.RowHeadersWidth = 51;
+            this.dgvPendingInvoices.RowTemplate.Height = 24;
+            this.dgvPendingInvoices.Size = new System.Drawing.Size(722, 419);
+            this.dgvPendingInvoices.TabIndex = 2;
             // 
             // pnlSummaryDetail
             // 
-            pnlSummaryDetail.Controls.Add(lblNote);
-            pnlSummaryDetail.Controls.Add(txtNotes);
-            pnlSummaryDetail.Controls.Add(lblInvoiceStatus);
-            pnlSummaryDetail.Controls.Add(lblTotalAmount);
-            pnlSummaryDetail.Controls.Add(lblSummaryTitle);
-            pnlSummaryDetail.Location = new Point(738, 161);
-            pnlSummaryDetail.Name = "pnlSummaryDetail";
-            pnlSummaryDetail.Size = new Size(544, 398);
-            pnlSummaryDetail.TabIndex = 18;
-            // 
-            // lblNote
-            // 
-            lblNote.AutoSize = true;
-            lblNote.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            lblNote.Location = new Point(22, 179);
-            lblNote.Name = "lblNote";
-            lblNote.Size = new Size(89, 25);
-            lblNote.TabIndex = 4;
-            lblNote.Text = "Ghi Chú :";
+            this.pnlSummaryDetail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSummaryDetail.Controls.Add(this.txtNotes);
+            this.pnlSummaryDetail.Controls.Add(this.lblNote);
+            this.pnlSummaryDetail.Controls.Add(this.lblInvoiceStatus);
+            this.pnlSummaryDetail.Controls.Add(this.lblTotalAmount);
+            this.pnlSummaryDetail.Controls.Add(this.lblSummaryTitle);
+            this.pnlSummaryDetail.Location = new System.Drawing.Point(740, 108);
+            this.pnlSummaryDetail.Name = "pnlSummaryDetail";
+            this.pnlSummaryDetail.Size = new System.Drawing.Size(550, 346);
+            this.pnlSummaryDetail.TabIndex = 3;
             // 
             // txtNotes
             // 
-            txtNotes.Location = new Point(22, 202);
-            txtNotes.Multiline = true;
-            txtNotes.Name = "txtNotes";
-            txtNotes.Size = new Size(505, 183);
-            txtNotes.TabIndex = 3;
+            this.txtNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNotes.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotes.Location = new System.Drawing.Point(27, 213);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(496, 125);
+            this.txtNotes.TabIndex = 4;
+            // 
+            // lblNote
+            // 
+            this.lblNote.AutoSize = true;
+            this.lblNote.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNote.Location = new System.Drawing.Point(22, 179);
+            this.lblNote.Name = "lblNote";
+            this.lblNote.Size = new System.Drawing.Size(89, 25);
+            this.lblNote.TabIndex = 3;
+            this.lblNote.Text = "Ghi Chú :";
             // 
             // lblInvoiceStatus
             // 
-            lblInvoiceStatus.AutoSize = true;
-            lblInvoiceStatus.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            lblInvoiceStatus.Location = new Point(22, 132);
-            lblInvoiceStatus.Name = "lblInvoiceStatus";
-            lblInvoiceStatus.Size = new Size(113, 25);
-            lblInvoiceStatus.TabIndex = 2;
-            lblInvoiceStatus.Text = "Trạng Thái :";
+            this.lblInvoiceStatus.AutoSize = true;
+            this.lblInvoiceStatus.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInvoiceStatus.Location = new System.Drawing.Point(22, 132);
+            this.lblInvoiceStatus.Name = "lblInvoiceStatus";
+            this.lblInvoiceStatus.Size = new System.Drawing.Size(118, 25);
+            this.lblInvoiceStatus.TabIndex = 2;
+            this.lblInvoiceStatus.Text = "Trạng Thái : ";
             // 
             // lblTotalAmount
             // 
-            lblTotalAmount.AutoSize = true;
-            lblTotalAmount.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            lblTotalAmount.Location = new Point(22, 74);
-            lblTotalAmount.Name = "lblTotalAmount";
-            lblTotalAmount.Size = new Size(126, 25);
-            lblTotalAmount.TabIndex = 1;
-            lblTotalAmount.Text = "Tổng Giá Trị :";
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAmount.Location = new System.Drawing.Point(22, 74);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(126, 25);
+            this.lblTotalAmount.TabIndex = 1;
+            this.lblTotalAmount.Text = "Tổng Giá Trị :";
             // 
             // lblSummaryTitle
             // 
-            lblSummaryTitle.BackColor = Color.Red;
-            lblSummaryTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSummaryTitle.ForeColor = Color.White;
-            lblSummaryTitle.Location = new Point(0, 0);
-            lblSummaryTitle.Name = "lblSummaryTitle";
-            lblSummaryTitle.Size = new Size(541, 44);
-            lblSummaryTitle.TabIndex = 0;
-            lblSummaryTitle.Text = "TỔNG KẾT HÓA ĐƠN ĐÃ CHỌN";
-            lblSummaryTitle.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblSummaryTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblSummaryTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSummaryTitle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummaryTitle.ForeColor = System.Drawing.Color.White;
+            this.lblSummaryTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblSummaryTitle.Name = "lblSummaryTitle";
+            this.lblSummaryTitle.Size = new System.Drawing.Size(548, 31);
+            this.lblSummaryTitle.TabIndex = 0;
+            this.lblSummaryTitle.Text = "TỔNG KẾT HÓA ĐƠN ĐÃ CHỌN";
+            this.lblSummaryTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlActions
             // 
-            pnlActions.Controls.Add(btnCancel);
-            pnlActions.Controls.Add(btnConfirmSelected);
-            pnlActions.Controls.Add(btnOpenReport);
-            pnlActions.Controls.Add(btnRejectSelected);
-            pnlActions.Location = new Point(738, 565);
-            pnlActions.Name = "pnlActions";
-            pnlActions.Size = new Size(544, 92);
-            pnlActions.TabIndex = 19;
+            this.pnlActions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlActions.Controls.Add(this.button2);
+            this.pnlActions.Controls.Add(this.btnOpenReport);
+            this.pnlActions.Controls.Add(this.btnRejectSelected);
+            this.pnlActions.Controls.Add(this.btnConfirmSelected);
+            this.pnlActions.Location = new System.Drawing.Point(740, 453);
+            this.pnlActions.Name = "pnlActions";
+            this.pnlActions.Size = new System.Drawing.Size(550, 74);
+            this.pnlActions.TabIndex = 4;
             // 
-            // btnCancel
+            // button2
             // 
-            btnCancel.BackColor = Color.Aqua;
-            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnCancel.ForeColor = Color.Black;
-            btnCancel.ImageAlign = ContentAlignment.TopLeft;
-            btnCancel.Location = new Point(0, 15);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(132, 59);
-            btnCancel.TabIndex = 3;
-            btnCancel.Text = "Đóng";
-            btnCancel.UseVisualStyleBackColor = false;
-            // 
-            // btnConfirmSelected
-            // 
-            btnConfirmSelected.BackColor = Color.Aqua;
-            btnConfirmSelected.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnConfirmSelected.ForeColor = Color.Black;
-            btnConfirmSelected.ImageAlign = ContentAlignment.TopLeft;
-            btnConfirmSelected.Location = new Point(412, 15);
-            btnConfirmSelected.Name = "btnConfirmSelected";
-            btnConfirmSelected.Size = new Size(132, 59);
-            btnConfirmSelected.TabIndex = 0;
-            btnConfirmSelected.Text = "Xác nhận";
-            btnConfirmSelected.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Aqua;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(6, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 59);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Đóng";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnOpenReport
             // 
-            btnOpenReport.BackColor = Color.Aqua;
-            btnOpenReport.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnOpenReport.ForeColor = Color.Black;
-            btnOpenReport.ImageAlign = ContentAlignment.TopLeft;
-            btnOpenReport.Location = new Point(138, 15);
-            btnOpenReport.Name = "btnOpenReport";
-            btnOpenReport.Size = new Size(132, 59);
-            btnOpenReport.TabIndex = 4;
-            btnOpenReport.Text = "Kiểm tra ";
-            btnOpenReport.UseVisualStyleBackColor = false;
+            this.btnOpenReport.BackColor = System.Drawing.Color.Aqua;
+            this.btnOpenReport.FlatAppearance.BorderSize = 0;
+            this.btnOpenReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenReport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenReport.Location = new System.Drawing.Point(141, 6);
+            this.btnOpenReport.Name = "btnOpenReport";
+            this.btnOpenReport.Size = new System.Drawing.Size(129, 59);
+            this.btnOpenReport.TabIndex = 2;
+            this.btnOpenReport.Text = "Kiểm tra";
+            this.btnOpenReport.UseVisualStyleBackColor = false;
             // 
             // btnRejectSelected
             // 
-            btnRejectSelected.BackColor = Color.Aqua;
-            btnRejectSelected.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnRejectSelected.ForeColor = Color.Black;
-            btnRejectSelected.ImageAlign = ContentAlignment.TopLeft;
-            btnRejectSelected.Location = new Point(274, 15);
-            btnRejectSelected.Name = "btnRejectSelected";
-            btnRejectSelected.Size = new Size(132, 59);
-            btnRejectSelected.TabIndex = 1;
-            btnRejectSelected.Text = "Hủy";
-            btnRejectSelected.UseVisualStyleBackColor = false;
+            this.btnRejectSelected.BackColor = System.Drawing.Color.Aqua;
+            this.btnRejectSelected.FlatAppearance.BorderSize = 0;
+            this.btnRejectSelected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRejectSelected.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRejectSelected.Location = new System.Drawing.Point(276, 6);
+            this.btnRejectSelected.Name = "btnRejectSelected";
+            this.btnRejectSelected.Size = new System.Drawing.Size(129, 59);
+            this.btnRejectSelected.TabIndex = 1;
+            this.btnRejectSelected.Text = "Hủy";
+            this.btnRejectSelected.UseVisualStyleBackColor = false;
             // 
-            // btnOnline
+            // btnConfirmSelected
             // 
-            btnOnline.BackColor = Color.White;
-            btnOnline.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnOnline.Image = (Image)resources.GetObject("btnOnline.Image");
-            btnOnline.ImageAlign = ContentAlignment.TopCenter;
-            btnOnline.Location = new Point(837, 3);
-            btnOnline.Name = "btnOnline";
-            btnOnline.Size = new Size(94, 52);
-            btnOnline.TabIndex = 8;
-            btnOnline.Text = "ONLINE";
-            btnOnline.TextAlign = ContentAlignment.BottomCenter;
-            btnOnline.UseVisualStyleBackColor = false;
-            // 
-            // btnHoldList
-            // 
-            btnHoldList.BackColor = Color.White;
-            btnHoldList.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnHoldList.Image = (Image)resources.GetObject("btnHoldList.Image");
-            btnHoldList.ImageAlign = ContentAlignment.TopCenter;
-            btnHoldList.Location = new Point(737, 3);
-            btnHoldList.Name = "btnHoldList";
-            btnHoldList.Size = new Size(94, 52);
-            btnHoldList.TabIndex = 9;
-            btnHoldList.Text = "HOLD LIST";
-            btnHoldList.TextAlign = ContentAlignment.BottomCenter;
-            btnHoldList.UseVisualStyleBackColor = false;
-            // 
-            // btnBillSearch
-            // 
-            btnBillSearch.BackColor = Color.White;
-            btnBillSearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnBillSearch.Image = (Image)resources.GetObject("btnBillSearch.Image");
-            btnBillSearch.ImageAlign = ContentAlignment.TopCenter;
-            btnBillSearch.Location = new Point(937, 3);
-            btnBillSearch.Name = "btnBillSearch";
-            btnBillSearch.Size = new Size(135, 52);
-            btnBillSearch.TabIndex = 10;
-            btnBillSearch.Text = "BILL SEARCH";
-            btnBillSearch.TextAlign = ContentAlignment.BottomCenter;
-            btnBillSearch.UseVisualStyleBackColor = false;
-            // 
-            // btnReport
-            // 
-            btnReport.BackColor = Color.White;
-            btnReport.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnReport.Image = (Image)resources.GetObject("btnReport.Image");
-            btnReport.ImageAlign = ContentAlignment.TopCenter;
-            btnReport.Location = new Point(1078, 3);
-            btnReport.Name = "btnReport";
-            btnReport.Size = new Size(94, 52);
-            btnReport.TabIndex = 11;
-            btnReport.Text = "REPORT";
-            btnReport.TextAlign = ContentAlignment.BottomCenter;
-            btnReport.UseVisualStyleBackColor = false;
-            // 
-            // btnMore
-            // 
-            btnMore.BackColor = Color.White;
-            btnMore.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnMore.Image = (Image)resources.GetObject("btnMore.Image");
-            btnMore.ImageAlign = ContentAlignment.TopCenter;
-            btnMore.Location = new Point(1178, 3);
-            btnMore.Name = "btnMore";
-            btnMore.Size = new Size(94, 52);
-            btnMore.TabIndex = 12;
-            btnMore.Text = "MORE";
-            btnMore.TextAlign = ContentAlignment.BottomCenter;
-            btnMore.UseVisualStyleBackColor = false;
-            // 
-            // pbLogo
-            // 
-            pbLogo.BackColor = Color.White;
-            pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
-            pbLogo.Location = new Point(3, 3);
-            pbLogo.Name = "pbLogo";
-            pbLogo.Size = new Size(103, 52);
-            pbLogo.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbLogo.TabIndex = 1;
-            pbLogo.TabStop = false;
-            // 
-            // pnlHeaderMain
-            // 
-            pnlHeaderMain.BackColor = Color.White;
-            pnlHeaderMain.Controls.Add(pbLogo);
-            pnlHeaderMain.Controls.Add(btnMore);
-            pnlHeaderMain.Controls.Add(btnReport);
-            pnlHeaderMain.Controls.Add(btnBillSearch);
-            pnlHeaderMain.Controls.Add(btnHoldList);
-            pnlHeaderMain.Controls.Add(btnOnline);
-            pnlHeaderMain.Location = new Point(1, 3);
-            pnlHeaderMain.Name = "pnlHeaderMain";
-            pnlHeaderMain.Size = new Size(1281, 61);
-            pnlHeaderMain.TabIndex = 8;
-            // 
-            // sqliteCommand1
-            // 
-            sqliteCommand1.CommandTimeout = 30;
-            sqliteCommand1.Connection = null;
-            sqliteCommand1.Transaction = null;
-            sqliteCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            this.btnConfirmSelected.BackColor = System.Drawing.Color.Aqua;
+            this.btnConfirmSelected.FlatAppearance.BorderSize = 0;
+            this.btnConfirmSelected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmSelected.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmSelected.Location = new System.Drawing.Point(411, 6);
+            this.btnConfirmSelected.Name = "btnConfirmSelected";
+            this.btnConfirmSelected.Size = new System.Drawing.Size(129, 59);
+            this.btnConfirmSelected.TabIndex = 0;
+            this.btnConfirmSelected.Text = "Xác nhận";
+            this.btnConfirmSelected.UseVisualStyleBackColor = false;
             // 
             // frmInvoiceConfirmation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1283, 669);
-            Controls.Add(pnlActions);
-            Controls.Add(pnlSummaryDetail);
-            Controls.Add(dgvPendingInvoices);
-            Controls.Add(pnlHeader);
-            Controls.Add(pnlHeaderMain);
-            Name = "frmInvoiceConfirmation";
-            Text = "frmInvoiceConfirmation";
-            pnlHeader.ResumeLayout(false);
-            pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPendingInvoices).EndInit();
-            pnlSummaryDetail.ResumeLayout(false);
-            pnlSummaryDetail.PerformLayout();
-            pnlActions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
-            pnlHeaderMain.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1300, 537);
+            this.Controls.Add(this.pnlActions);
+            this.Controls.Add(this.pnlSummaryDetail);
+            this.Controls.Add(this.dgvPendingInvoices);
+            this.Controls.Add(this.pnlHeader);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "frmInvoiceConfirmation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "XÁC NHẬN HÓA ĐƠN";
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPendingInvoices)).EndInit();
+            this.pnlSummaryDetail.ResumeLayout(false);
+            this.pnlSummaryDetail.PerformLayout();
+            this.pnlActions.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-        private Button btnSearch;
-        private Button btnClearFilter;
-        private Label lblTitle;
-        private Label lblFromDate;
-        private Label lblToDate;
-        private DateTimePicker dtpStartDate;
-        private DateTimePicker dtpEndDate;
-        private Panel pnlHeader;
-        private TextBox txtSearchInvoice;
-        private DataGridView dgvPendingInvoices;
-        private Panel pnlSummaryDetail;
-        private Label lblInvoiceStatus;
-        private Label lblTotalAmount;
-        private Label lblSummaryTitle;
-        private TextBox txtNotes;
-        private Label lblNote;
-        private Panel pnlActions;
-        private Button btnCancel;
-        private Button btnRejectSelected;
-        private Button btnConfirmSelected;
-        private Button btnOpenReport;
-        private Label lblFind;
-        private Button btnOnline;
-        private Button btnHoldList;
-        private Button btnBillSearch;
-        private Button btnReport;
-        private Button btnMore;
-        private PictureBox pbLogo;
-        private Panel pnlHeaderMain;
-        private Microsoft.Data.Sqlite.SqliteCommand sqliteCommand1;
+        private System.Windows.Forms.Panel pnlHeader;
+        private System.Windows.Forms.DateTimePicker dtpEndDate;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
+        private System.Windows.Forms.Label lblToDate;
+        private System.Windows.Forms.Label lblFromDate;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearchInvoice;
+        private System.Windows.Forms.Label lblFind;
+        private System.Windows.Forms.Button btnClearFilter;
+        private System.Windows.Forms.DataGridView dgvPendingInvoices;
+        private System.Windows.Forms.Panel pnlSummaryDetail;
+        private System.Windows.Forms.Label lblSummaryTitle;
+        private System.Windows.Forms.TextBox txtNotes;
+        private System.Windows.Forms.Label lblNote;
+        private System.Windows.Forms.Label lblInvoiceStatus;
+        private System.Windows.Forms.Label lblTotalAmount;
+        private System.Windows.Forms.Panel pnlActions;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnOpenReport;
+        private System.Windows.Forms.Button btnRejectSelected;
+        private System.Windows.Forms.Button btnConfirmSelected;
     }
 }
